@@ -1,0 +1,18 @@
+﻿@page
+@model MSWebPROJ2.Pages.DbUpdateModel
+<!-- Nicholas Woerner
+    This page holds the "Ui" for the part of site 
+    where you can add or update to the database.
+-->
+<h1>Add/Edit a User!</h1>
+<form method="post">
+    <div class="form-group">
+    <label for="FirstName">First Name</label>
+    <input asp-for="User.FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input asp-for="User.LastName" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
